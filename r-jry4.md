@@ -2,8 +2,6 @@
 
 ## Weakness #1 & Question #1
 
-Thank you for the question on latency scalability. We provide the measured actor-side latency across model sizes and the solver latency range below.
-
 | **Latency (s)** | **Actor 0.6B** | **Actor 1.7B** | **Actor 4B** | **Actor 8B** | **Solver 14B** |
 |---|---:|---:|---:|---:|---:|
 | mean | 0.047 | 0.102 | 0.233 | 0.528 | 8.077 to 18.403 |
@@ -13,8 +11,6 @@ Thank you for the question on latency scalability. We provide the measured actor
 **Table:** Actor latency across model sizes. Solver latency varies by task.
 
 ## Weakness #2 & Question #2
-
-Thank you for raising the concern on actor size and downstream effectiveness. We summarize the actor-size scaling results across recommendation and QA tasks below.
 
 | **Actor** | **Amazon-Beauty HR@10** | **Amazon-Beauty NDCG@10** | **HotpotQA EM** | **HotpotQA F1** |
 |---|---:|---:|---:|---:|
@@ -26,8 +22,6 @@ Thank you for raising the concern on actor size and downstream effectiveness. We
 **Table:** Actor size vs. performance across all tasks. Solver = Qwen3-14B.
 
 ## Weakness #3
-
-Thank you for the concern about robustness under longer contexts. We report HotpotQA results as context grows by injecting distractor documents.
 
 | **Method** | **~2K (original)** | **~8K** | **~16K** | **~32K** |
 |---|---:|---:|---:|---:|
