@@ -19,7 +19,7 @@
 | 4B | 0.02937 | 0.01620 | 0.606 | 0.741 |
 | 8B | 0.02994 | 0.01648 | 0.609 | 0.742 |
 
-**Table:** Actor size vs. performance across all tasks. Solver = Qwen3-14B.
+**Table:** Actor size vs. performance across tasks. Solver = Qwen3-14B.
 
 ## Weakness #3
 
