@@ -2,7 +2,7 @@
 
 ## Weakness 4
 
-| **Failure Mode** | **Amazon-Beauty** | **HotpotQA** |
+| **Mode** | **Amazon-Beauty** | **HotpotQA** |
 |---|---:|---:|
 | Total success cases (MI Incorrect → HiLight correct) | 168 | 63 |
 | Total failure cases (MI correct → HiLight incorrect) | 28 | 20 |
