@@ -1,0 +1,40 @@
+# Supp-tables
+
+## Weakness #2
+
+Thank you for requesting quantitative evidence on highlight quality. We report token-level overlap with HotpotQA supporting facts below.
+
+| **Actor Size** | **Precision** | **Recall** | **F1** |
+|---|---:|---:|---:|
+| 0.6B | 0.7275 | 0.6433 | 0.6828 |
+| 1.7B | 0.7964 | 0.7016 | 0.7460 |
+| 4B | 0.8367 | 0.7215 | 0.7748 |
+| 8B | 0.8403 | 0.7307 | 0.7817 |
+
+**Table:** Token-level overlap between Actor highlights and ground-truth supporting facts on HotpotQA (threshold = 0.5).
+
+## Weakness #3
+
+Thank you for asking about transfer to another solver. We evaluate GPT-5 mini with a zero-shot Actor trained on Qwen3-14B.
+
+| **Solver** | **Amazon-Beauty HR@10** | **Amazon-Beauty NDCG@10** | **HotpotQA EM** | **HotpotQA F1** |
+|---|---:|---:|---:|---:|
+| GPT-5 mini (MI) | 0.03083 | 0.01941 | 0.646 | 0.809 |
+| GPT-5 mini + HiLight | 0.03127 | 0.02070 | 0.657 | 0.818 |
+| Δ_% | +1.43% | +6.65% | +1.70% | +1.11% |
+
+**Table:** GPT-5 mini evaluation. The Actor is trained on Qwen3-14B and applied zero-shot.
+
+## Question
+
+Thank you for the question on actor scaling. We provide the actor-size comparison across recommendation and QA tasks below.
+
+| **Actor** | **Amazon-Beauty HR@10** | **Amazon-Beauty NDCG@10** | **HotpotQA EM** | **HotpotQA F1** |
+|---|---:|---:|---:|---:|
+| 0.6B | 0.02830 | 0.01521 | 0.593 | 0.721 |
+| 1.7B | 0.02877 | 0.01587 | 0.597 | 0.728 |
+| 4B | 0.02937 | 0.01620 | 0.606 | 0.741 |
+| 8B | 0.02994 | 0.01648 | 0.609 | 0.742 |
+
+**Table:** Actor size vs. performance across all tasks. Solver = Qwen3-14B.
+
